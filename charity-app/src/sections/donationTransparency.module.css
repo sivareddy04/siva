@@ -1,0 +1,17 @@
+.section{margin:22px 0;padding:22px;border-radius:18px;border:1px solid rgba(15,23,42,0.08);background:#fff}
+.header{margin-bottom:16px}
+.h2{margin:0;font-size:28px;color:#0f172a}
+.sub{display:block;margin-top:6px;font-size:14px;color:rgba(15,23,42,0.55)}
+.p{margin:10px 0 0;color:rgba(15,23,42,0.7);line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1px solid rgba(15,23,42,0.08);border-radius:18px;background:linear-gradient(180deg,#fff,#f8fafc);overflow:hidden}
+.photo{height:140px;background:linear-gradient(135deg,rgba(34,197,94,0.2),rgba(16,185,129,0.06))}
+.photoInner{height:100%;width:100%}
+.cardBody{padding:14px 14px}
+.cardTitle{font-weight:950;color:#0f172a}
+.cardTe{margin-top:6px;font-size:13px;color:rgba(15,23,42,0.65)}
+.ctaRow{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.payBtn{display:inline-block;background:#16a34a;color:#fff;text-decoration:none;padding:12px 18px;border-radius:14px;font-weight:900;box-shadow:0 10px 26px rgba(22,163,74,0.22)}
+.payBtn:hover{filter:brightness(0.98)}
+.note{font-size:13px;color:rgba(15,23,42,0.6);font-weight:700}
+@media (max-width: 980px){.grid{grid-template-columns:1fr}.ctaRow{justify-content:flex-start}}

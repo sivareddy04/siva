@@ -1,0 +1,20 @@
+.section{margin:22px 0;padding:22px;border-radius:18px;border:1px solid rgba(15,23,42,0.08);background:#fff}
+.header{margin-bottom:16px}
+.h2{margin:0;font-size:28px;color:#0f172a}
+.sub{display:block;margin-top:6px;font-size:14px;color:rgba(15,23,42,0.55)}
+.p{margin:10px 0 0;color:rgba(15,23,42,0.7);line-height:1.6}
+.searchRow{margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.search{flex:1;min-width:220px;padding:12px 14px;border-radius:14px;border:1px solid rgba(15,23,42,0.12);outline:none}
+.search:focus{border-color:rgba(22,163,74,0.55);box-shadow:0 0 0 4px rgba(22,163,74,0.12)}
+.count{font-size:13px;color:rgba(15,23,42,0.6);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{border:1px solid rgba(15,23,42,0.08);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,#fff,#f8fafc)}
+.photo{height:130px;background:linear-gradient(135deg,rgba(34,197,94,0.18),rgba(16,185,129,0.06))}
+.photoInner{height:100%;width:100%}
+.body{padding:14px 14px}
+.name{font-weight:900;color:#0f172a}
+.location{margin-top:6px;font-size:13px;color:rgba(15,23,42,0.65);line-height:1.3}
+.selectBtn{margin-top:12px;background:#16a34a;color:#fff;border:none;border-radius:14px;padding:10px 12px;font-weight:900;cursor:pointer;width:100%}
+.selectBtn:hover{filter:brightness(0.98)}
+@media (max-width: 1080px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 560px){.grid{grid-template-columns:1fr}}

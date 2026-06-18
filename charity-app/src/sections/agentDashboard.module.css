@@ -1,0 +1,277 @@
+.container {
+  padding: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #5b6574;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e8eef6;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.02);
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.table {
+  display: grid;
+  gap: 10px;
+}
+
+.rowHead {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.1fr 1.7fr 1.6fr 0.9fr 0.8fr;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #334155;
+}
+
+@media (max-width: 980px) {
+  .rowHead {
+    display: none;
+  }
+}
+
+.reqRow {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.1fr 1.7fr 1.6fr 0.9fr 0.8fr;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  background: white;
+}
+
+@media (max-width: 980px) {
+  .reqRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.cellTitle {
+  font-weight: 900;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.cellMain {
+  color: #334155;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.actionsCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonPrimary {
+  appearance: none;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  font-weight: 900;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.buttonPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonSecondary {
+  appearance: none;
+  border: 1px solid #d7e1ee;
+  background: #fff;
+  color: #111827;
+  font-weight: 900;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-weight: 900;
+  font-size: 12px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.badgeNotStarted {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.badgePicked {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgeDelivered {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.muted {
+  color: #5b6574;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.error {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.mapBox {
+  border: 1px dashed #dbeafe;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.mapInner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mapTitle {
+  font-size: 16px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.mapMuted {
+  font-size: 12px;
+  color: #5b6574;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.divider {
+  height: 1px;
+  background: #e8eef6;
+  margin: 14px 0;
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+}
+
+.checkCard {
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  background: white;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.checkTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkTask {
+  font-weight: 900;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.checkItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.checkItem input {
+  width: 18px;
+  height: 18px;
+}
+
+.footerRow {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #5b6574;
+  font-weight: 800;
+}
+
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 12px;
+  font-weight: 900;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 2px 6px;
+  border-radius: 8px;
+}

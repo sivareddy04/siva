@@ -1,0 +1,294 @@
+.container {
+  padding: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #5b6574;
+  font-size: 14px;
+  font-weight: 700;
+  max-width: 62ch;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 900px) {
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.statCard {
+  background: #ffffff;
+  border: 1px solid #e8eef6;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.statLabel {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.statValue {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 1000;
+  color: #0f172a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 980px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e8eef6;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.sectionHint {
+  font-size: 13px;
+  color: #5b6574;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.table {
+  display: grid;
+  gap: 10px;
+}
+
+.rowHead {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 0.9fr 1.1fr;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #334155;
+}
+
+@media (max-width: 860px) {
+  .rowHead {
+    display: none;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 0.9fr 1.1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.cellMain {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cellTitle {
+  font-weight: 1000;
+  font-size: 14px;
+}
+
+.cellMuted {
+  color: #5b6574;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-weight: 900;
+  font-size: 12px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.badgeActive {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.badgePending {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgeSuspended {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.buttonSecondary {
+  appearance: none;
+  border: 1px solid #d7e1ee;
+  background: #fff;
+  color: #111827;
+  font-weight: 900;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttonDanger {
+  appearance: none;
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+  font-weight: 900;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.auditList {
+  display: grid;
+  gap: 10px;
+  max-height: 420px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+.auditRow {
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.auditTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.auditAction {
+  font-weight: 1000;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.auditTime {
+  color: #5b6574;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.auditDetail {
+  margin-top: 6px;
+  color: #334155;
+  font-weight: 750;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.footerRow {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #5b6574;
+  font-weight: 800;
+}
+
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 900;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.error {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: #5b6574;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footerNote {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #5b6574;
+}
